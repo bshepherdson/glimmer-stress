@@ -1,0 +1,10 @@
+<div>
+  <div><Cell @text={{text}} /></div>
+  {{#each values key="@index" as |row|}}
+    <div>
+      {{#each row key="@index" as |col|}}
+        <Cell @text={{col}} />
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
